@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/mymalloc.dir/mymalloc.cpp.o"
   "CMakeFiles/mymalloc.dir/span.cpp.o"
   "CMakeFiles/mymalloc.dir/central.cpp.o"
+  "CMakeFiles/mymalloc.dir/cache.cpp.o"
   "mymalloc.pdb"
   "mymalloc"
 )

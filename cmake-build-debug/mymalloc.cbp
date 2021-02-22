@@ -267,6 +267,52 @@
 					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="cpuTest">
+				<Option output="/tmp/tmp.p67NHqaNhG/cmake-build-debug/cpuTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.p67NHqaNhG/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/opt/rh/devtoolset-8/root/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-debug/Makefile&quot;  VERBOSE=1 cpuTest"/>
+					<CompileFile command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cpuTest/fast">
+				<Option output="/tmp/tmp.p67NHqaNhG/cmake-build-debug/cpuTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.p67NHqaNhG/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/opt/rh/devtoolset-8/root/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-debug/Makefile&quot;  VERBOSE=1 cpuTest/fast"/>
+					<CompileFile command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="mapTest">
 				<Option output="/tmp/tmp.p67NHqaNhG/cmake-build-debug/mapTest" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/tmp/tmp.p67NHqaNhG/cmake-build-debug"/>
@@ -319,6 +365,16 @@
 			<Option target="mallocTest"/>
 			<Option target="freeTest"/>
 		</Unit>
+		<Unit filename="/tmp/tmp.p67NHqaNhG/cache.cpp">
+			<Option target="mymalloc"/>
+			<Option target="mallocTest"/>
+			<Option target="freeTest"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.p67NHqaNhG/cache.h">
+			<Option target="mymalloc"/>
+			<Option target="mallocTest"/>
+			<Option target="freeTest"/>
+		</Unit>
 		<Unit filename="/tmp/tmp.p67NHqaNhG/central.cpp">
 			<Option target="mymalloc"/>
 			<Option target="mallocTest"/>
@@ -356,6 +412,9 @@
 			<Option target="mymalloc"/>
 			<Option target="mallocTest"/>
 			<Option target="freeTest"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.p67NHqaNhG/test/cpuTest.cpp">
+			<Option target="cpuTest"/>
 		</Unit>
 		<Unit filename="/tmp/tmp.p67NHqaNhG/test/freeTest.cpp">
 			<Option target="freeTest"/>

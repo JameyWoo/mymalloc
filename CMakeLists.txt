@@ -11,6 +11,7 @@ set(
         consts.h
         span.cpp
         central.cpp
+        cache.cpp
 )
 
 add_executable(
@@ -53,5 +54,15 @@ add_executable(
 
 target_link_libraries(
         threadMallocTest
+        pthread
+)
+
+add_executable(
+        cpuTest
+        test/cpuTest.cpp
+)
+
+target_link_libraries(
+        cpuTest
         pthread
 )

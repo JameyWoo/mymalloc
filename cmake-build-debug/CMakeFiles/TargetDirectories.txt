@@ -5,4 +5,5 @@
 /tmp/tmp.p67NHqaNhG/cmake-build-debug/CMakeFiles/mymalloc.dir
 /tmp/tmp.p67NHqaNhG/cmake-build-debug/CMakeFiles/mallocTest.dir
 /tmp/tmp.p67NHqaNhG/cmake-build-debug/CMakeFiles/freeTest.dir
+/tmp/tmp.p67NHqaNhG/cmake-build-debug/CMakeFiles/cpuTest.dir
 /tmp/tmp.p67NHqaNhG/cmake-build-debug/CMakeFiles/mapTest.dir

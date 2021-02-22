@@ -176,6 +176,19 @@ freeTest/fast:
 .PHONY : freeTest/fast
 
 #=============================================================================
+# Target rules for targets named cpuTest
+
+# Build rule for target.
+cpuTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cpuTest
+.PHONY : cpuTest
+
+# fast build rule for target.
+cpuTest/fast:
+	$(MAKE) -f CMakeFiles/cpuTest.dir/build.make CMakeFiles/cpuTest.dir/build
+.PHONY : cpuTest/fast
+
+#=============================================================================
 # Target rules for targets named mapTest
 
 # Build rule for target.
@@ -187,6 +200,39 @@ mapTest: cmake_check_build_system
 mapTest/fast:
 	$(MAKE) -f CMakeFiles/mapTest.dir/build.make CMakeFiles/mapTest.dir/build
 .PHONY : mapTest/fast
+
+cache.o: cache.cpp.o
+
+.PHONY : cache.o
+
+# target to build an object file
+cache.cpp.o:
+	$(MAKE) -f CMakeFiles/mymalloc.dir/build.make CMakeFiles/mymalloc.dir/cache.cpp.o
+	$(MAKE) -f CMakeFiles/mallocTest.dir/build.make CMakeFiles/mallocTest.dir/cache.cpp.o
+	$(MAKE) -f CMakeFiles/freeTest.dir/build.make CMakeFiles/freeTest.dir/cache.cpp.o
+.PHONY : cache.cpp.o
+
+cache.i: cache.cpp.i
+
+.PHONY : cache.i
+
+# target to preprocess a source file
+cache.cpp.i:
+	$(MAKE) -f CMakeFiles/mymalloc.dir/build.make CMakeFiles/mymalloc.dir/cache.cpp.i
+	$(MAKE) -f CMakeFiles/mallocTest.dir/build.make CMakeFiles/mallocTest.dir/cache.cpp.i
+	$(MAKE) -f CMakeFiles/freeTest.dir/build.make CMakeFiles/freeTest.dir/cache.cpp.i
+.PHONY : cache.cpp.i
+
+cache.s: cache.cpp.s
+
+.PHONY : cache.s
+
+# target to generate assembly for a file
+cache.cpp.s:
+	$(MAKE) -f CMakeFiles/mymalloc.dir/build.make CMakeFiles/mymalloc.dir/cache.cpp.s
+	$(MAKE) -f CMakeFiles/mallocTest.dir/build.make CMakeFiles/mallocTest.dir/cache.cpp.s
+	$(MAKE) -f CMakeFiles/freeTest.dir/build.make CMakeFiles/freeTest.dir/cache.cpp.s
+.PHONY : cache.cpp.s
 
 central.o: central.cpp.o
 
@@ -313,6 +359,33 @@ span.cpp.s:
 	$(MAKE) -f CMakeFiles/mallocTest.dir/build.make CMakeFiles/mallocTest.dir/span.cpp.s
 	$(MAKE) -f CMakeFiles/freeTest.dir/build.make CMakeFiles/freeTest.dir/span.cpp.s
 .PHONY : span.cpp.s
+
+test/cpuTest.o: test/cpuTest.cpp.o
+
+.PHONY : test/cpuTest.o
+
+# target to build an object file
+test/cpuTest.cpp.o:
+	$(MAKE) -f CMakeFiles/cpuTest.dir/build.make CMakeFiles/cpuTest.dir/test/cpuTest.cpp.o
+.PHONY : test/cpuTest.cpp.o
+
+test/cpuTest.i: test/cpuTest.cpp.i
+
+.PHONY : test/cpuTest.i
+
+# target to preprocess a source file
+test/cpuTest.cpp.i:
+	$(MAKE) -f CMakeFiles/cpuTest.dir/build.make CMakeFiles/cpuTest.dir/test/cpuTest.cpp.i
+.PHONY : test/cpuTest.cpp.i
+
+test/cpuTest.s: test/cpuTest.cpp.s
+
+.PHONY : test/cpuTest.s
+
+# target to generate assembly for a file
+test/cpuTest.cpp.s:
+	$(MAKE) -f CMakeFiles/cpuTest.dir/build.make CMakeFiles/cpuTest.dir/test/cpuTest.cpp.s
+.PHONY : test/cpuTest.cpp.s
 
 test/freeTest.o: test/freeTest.cpp.o
 
@@ -462,7 +535,11 @@ help:
 	@echo "... mymalloc"
 	@echo "... mallocTest"
 	@echo "... freeTest"
+	@echo "... cpuTest"
 	@echo "... mapTest"
+	@echo "... cache.o"
+	@echo "... cache.i"
+	@echo "... cache.s"
 	@echo "... central.o"
 	@echo "... central.i"
 	@echo "... central.s"
@@ -475,6 +552,9 @@ help:
 	@echo "... span.o"
 	@echo "... span.i"
 	@echo "... span.s"
+	@echo "... test/cpuTest.o"
+	@echo "... test/cpuTest.i"
+	@echo "... test/cpuTest.s"
 	@echo "... test/freeTest.o"
 	@echo "... test/freeTest.i"
 	@echo "... test/freeTest.s"

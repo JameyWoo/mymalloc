@@ -51,5 +51,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/mymalloc.dir/DependInfo.cmake"
   "CMakeFiles/mallocTest.dir/DependInfo.cmake"
   "CMakeFiles/freeTest.dir/DependInfo.cmake"
+  "CMakeFiles/cpuTest.dir/DependInfo.cmake"
   "CMakeFiles/mapTest.dir/DependInfo.cmake"
   )
