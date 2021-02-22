@@ -11,6 +11,7 @@
 
 #include <thread>
 #include <map>
+#include <mutex>
 
 
 class Cache;
@@ -28,6 +29,9 @@ public:
     SpanList alloc[spanClasses];
     Central ctl[spanClasses];  // 一个指向 Heap对象的指针, 在使用它的时候需要动态地转化
     SpanMap * spanMap;
+
+private:
+    std::mutex mtx;
 };
 
 

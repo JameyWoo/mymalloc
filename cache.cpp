@@ -35,8 +35,12 @@ void *Cache::malloc(int size) {
      */
     Span* span = nullptr;
     if (spanList->list == nullptr) {  // 情况 1
+        // 锁
+        mtx.lock();
         spanList->pushBack(ctl[spanClass].malloc(spanMap));  // central.malloc 会返回一个 span指针
         span = spanList->list;
+        // 解锁
+        mtx.unlock();
     } else {
         auto p = spanList->list;
         do {
@@ -47,8 +51,12 @@ void *Cache::malloc(int size) {
             p = p->next;
         } while (p != spanList->list);
         if (span == nullptr) {  // 第二种情况
+            // 锁
+            mtx.lock();
             spanList->pushFront(ctl[spanClass].malloc(spanMap));
             span = spanList->list;
+            // 解锁
+            mtx.unlock();
         }
     }
     return span->malloc();
