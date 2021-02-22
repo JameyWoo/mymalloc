@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/threadMallocTest.dir/test/threadMallocTest.cpp.o  -o threadMallocTest -lpthread 
