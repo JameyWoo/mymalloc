@@ -16,7 +16,7 @@ public:
 
 public:
     // 被 heap调用
-    void *malloc(SpanMap *);  // 不需要传入大小, 只需要分配固定的大小对应的起始地址
+    Span *malloc(SpanMap *);  // 不需要传入大小, 只需要分配固定的大小对应的起始地址
 
 public:
     // 还有内存可用的span

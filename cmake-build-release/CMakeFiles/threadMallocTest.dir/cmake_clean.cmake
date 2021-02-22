@@ -1,5 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/threadMallocTest.dir/test/threadMallocTest.cpp.o"
+  "CMakeFiles/threadMallocTest.dir/mymalloc.cpp.o"
+  "CMakeFiles/threadMallocTest.dir/span.cpp.o"
+  "CMakeFiles/threadMallocTest.dir/central.cpp.o"
+  "CMakeFiles/threadMallocTest.dir/cache.cpp.o"
   "threadMallocTest.pdb"
   "threadMallocTest"
 )

@@ -20,6 +20,7 @@ using SpanMap = std::map<bool *, Span *, std::greater<bool *>>;
 
 class Span {
 public:
+    Span();
     Span(void *sa, int s, int n, int a, int sc, int es);
 
 public:
@@ -61,7 +62,7 @@ public:
     SpanList(int sc);
 
 public:
-    Span *getSpan(SpanMap *);
+    Span *newSpan(SpanMap *spanMap);
 
     void popFront();
 
@@ -71,7 +72,7 @@ public:
 
     void pop(Span *pSpan);
 
-private:
+public:
     Span *list;
     int spanClass;
 };

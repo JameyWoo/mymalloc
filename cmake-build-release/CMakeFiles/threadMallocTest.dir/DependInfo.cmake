@@ -4,6 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/tmp/tmp.p67NHqaNhG/cache.cpp" "/tmp/tmp.p67NHqaNhG/cmake-build-release/CMakeFiles/threadMallocTest.dir/cache.cpp.o"
+  "/tmp/tmp.p67NHqaNhG/central.cpp" "/tmp/tmp.p67NHqaNhG/cmake-build-release/CMakeFiles/threadMallocTest.dir/central.cpp.o"
+  "/tmp/tmp.p67NHqaNhG/mymalloc.cpp" "/tmp/tmp.p67NHqaNhG/cmake-build-release/CMakeFiles/threadMallocTest.dir/mymalloc.cpp.o"
+  "/tmp/tmp.p67NHqaNhG/span.cpp" "/tmp/tmp.p67NHqaNhG/cmake-build-release/CMakeFiles/threadMallocTest.dir/span.cpp.o"
   "/tmp/tmp.p67NHqaNhG/test/threadMallocTest.cpp" "/tmp/tmp.p67NHqaNhG/cmake-build-release/CMakeFiles/threadMallocTest.dir/test/threadMallocTest.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

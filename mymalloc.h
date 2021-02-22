@@ -8,10 +8,12 @@
 #include <algorithm>
 #include <iostream>
 #include <map>
+#include <thread>
 
 #include "consts.h"
 #include "span.h"
 #include "central.h"
+#include "cache.h"
 
 extern const int spanClasses;
 extern const int spanInfo[spanClasses][4];
@@ -36,6 +38,7 @@ namespace mymalloc {
         // 成员变量
     public:
         SpanMap spanMap;
+        CacheMap cacheMap;
 
     private:
         Central ctls[spanClasses];  // 每一种span对应一个Central

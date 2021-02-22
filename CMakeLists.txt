@@ -50,6 +50,7 @@ target_link_libraries(
 add_executable(
         threadMallocTest
         test/threadMallocTest.cpp
+        ${mymallocSource}
 )
 
 target_link_libraries(

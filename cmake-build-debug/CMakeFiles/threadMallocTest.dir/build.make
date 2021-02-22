@@ -70,17 +70,77 @@ CMakeFiles/threadMallocTest.dir/test/threadMallocTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/threadMallocTest.dir/test/threadMallocTest.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.p67NHqaNhG/test/threadMallocTest.cpp -o CMakeFiles/threadMallocTest.dir/test/threadMallocTest.cpp.s
 
+CMakeFiles/threadMallocTest.dir/mymalloc.cpp.o: CMakeFiles/threadMallocTest.dir/flags.make
+CMakeFiles/threadMallocTest.dir/mymalloc.cpp.o: ../mymalloc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.p67NHqaNhG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/threadMallocTest.dir/mymalloc.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/threadMallocTest.dir/mymalloc.cpp.o -c /tmp/tmp.p67NHqaNhG/mymalloc.cpp
+
+CMakeFiles/threadMallocTest.dir/mymalloc.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/threadMallocTest.dir/mymalloc.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.p67NHqaNhG/mymalloc.cpp > CMakeFiles/threadMallocTest.dir/mymalloc.cpp.i
+
+CMakeFiles/threadMallocTest.dir/mymalloc.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/threadMallocTest.dir/mymalloc.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.p67NHqaNhG/mymalloc.cpp -o CMakeFiles/threadMallocTest.dir/mymalloc.cpp.s
+
+CMakeFiles/threadMallocTest.dir/span.cpp.o: CMakeFiles/threadMallocTest.dir/flags.make
+CMakeFiles/threadMallocTest.dir/span.cpp.o: ../span.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.p67NHqaNhG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/threadMallocTest.dir/span.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/threadMallocTest.dir/span.cpp.o -c /tmp/tmp.p67NHqaNhG/span.cpp
+
+CMakeFiles/threadMallocTest.dir/span.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/threadMallocTest.dir/span.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.p67NHqaNhG/span.cpp > CMakeFiles/threadMallocTest.dir/span.cpp.i
+
+CMakeFiles/threadMallocTest.dir/span.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/threadMallocTest.dir/span.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.p67NHqaNhG/span.cpp -o CMakeFiles/threadMallocTest.dir/span.cpp.s
+
+CMakeFiles/threadMallocTest.dir/central.cpp.o: CMakeFiles/threadMallocTest.dir/flags.make
+CMakeFiles/threadMallocTest.dir/central.cpp.o: ../central.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.p67NHqaNhG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/threadMallocTest.dir/central.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/threadMallocTest.dir/central.cpp.o -c /tmp/tmp.p67NHqaNhG/central.cpp
+
+CMakeFiles/threadMallocTest.dir/central.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/threadMallocTest.dir/central.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.p67NHqaNhG/central.cpp > CMakeFiles/threadMallocTest.dir/central.cpp.i
+
+CMakeFiles/threadMallocTest.dir/central.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/threadMallocTest.dir/central.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.p67NHqaNhG/central.cpp -o CMakeFiles/threadMallocTest.dir/central.cpp.s
+
+CMakeFiles/threadMallocTest.dir/cache.cpp.o: CMakeFiles/threadMallocTest.dir/flags.make
+CMakeFiles/threadMallocTest.dir/cache.cpp.o: ../cache.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.p67NHqaNhG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/threadMallocTest.dir/cache.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/threadMallocTest.dir/cache.cpp.o -c /tmp/tmp.p67NHqaNhG/cache.cpp
+
+CMakeFiles/threadMallocTest.dir/cache.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/threadMallocTest.dir/cache.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.p67NHqaNhG/cache.cpp > CMakeFiles/threadMallocTest.dir/cache.cpp.i
+
+CMakeFiles/threadMallocTest.dir/cache.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/threadMallocTest.dir/cache.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.p67NHqaNhG/cache.cpp -o CMakeFiles/threadMallocTest.dir/cache.cpp.s
+
 # Object files for target threadMallocTest
 threadMallocTest_OBJECTS = \
-"CMakeFiles/threadMallocTest.dir/test/threadMallocTest.cpp.o"
+"CMakeFiles/threadMallocTest.dir/test/threadMallocTest.cpp.o" \
+"CMakeFiles/threadMallocTest.dir/mymalloc.cpp.o" \
+"CMakeFiles/threadMallocTest.dir/span.cpp.o" \
+"CMakeFiles/threadMallocTest.dir/central.cpp.o" \
+"CMakeFiles/threadMallocTest.dir/cache.cpp.o"
 
 # External object files for target threadMallocTest
 threadMallocTest_EXTERNAL_OBJECTS =
 
 threadMallocTest: CMakeFiles/threadMallocTest.dir/test/threadMallocTest.cpp.o
+threadMallocTest: CMakeFiles/threadMallocTest.dir/mymalloc.cpp.o
+threadMallocTest: CMakeFiles/threadMallocTest.dir/span.cpp.o
+threadMallocTest: CMakeFiles/threadMallocTest.dir/central.cpp.o
+threadMallocTest: CMakeFiles/threadMallocTest.dir/cache.cpp.o
 threadMallocTest: CMakeFiles/threadMallocTest.dir/build.make
 threadMallocTest: CMakeFiles/threadMallocTest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/tmp/tmp.p67NHqaNhG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable threadMallocTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/tmp/tmp.p67NHqaNhG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable threadMallocTest"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/threadMallocTest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

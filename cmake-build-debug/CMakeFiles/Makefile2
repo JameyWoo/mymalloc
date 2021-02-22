@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /tmp/tmp.p67NHqaNhG/cmake-build-debug
 CMakeFiles/threadMallocTest.dir/all:
 	$(MAKE) -f CMakeFiles/threadMallocTest.dir/build.make CMakeFiles/threadMallocTest.dir/depend
 	$(MAKE) -f CMakeFiles/threadMallocTest.dir/build.make CMakeFiles/threadMallocTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/tmp/tmp.p67NHqaNhG/cmake-build-debug/CMakeFiles --progress-num=23,24 "Built target threadMallocTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/tmp/tmp.p67NHqaNhG/cmake-build-debug/CMakeFiles --progress-num=23,24,25,26,27,28 "Built target threadMallocTest"
 .PHONY : CMakeFiles/threadMallocTest.dir/all
 
 # Include target in all.
@@ -81,7 +81,7 @@ all: CMakeFiles/threadMallocTest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/threadMallocTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/tmp.p67NHqaNhG/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/tmp.p67NHqaNhG/cmake-build-debug/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/threadMallocTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/tmp.p67NHqaNhG/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/threadMallocTest.dir/rule
@@ -108,7 +108,7 @@ clean: CMakeFiles/threadMallocTest.dir/clean
 CMakeFiles/threadTest.dir/all:
 	$(MAKE) -f CMakeFiles/threadTest.dir/build.make CMakeFiles/threadTest.dir/depend
 	$(MAKE) -f CMakeFiles/threadTest.dir/build.make CMakeFiles/threadTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/tmp/tmp.p67NHqaNhG/cmake-build-debug/CMakeFiles --progress-num=25,26 "Built target threadTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/tmp/tmp.p67NHqaNhG/cmake-build-debug/CMakeFiles --progress-num=29,30 "Built target threadTest"
 .PHONY : CMakeFiles/threadTest.dir/all
 
 # Include target in all.

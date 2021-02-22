@@ -207,6 +207,7 @@ cache.o: cache.cpp.o
 
 # target to build an object file
 cache.cpp.o:
+	$(MAKE) -f CMakeFiles/threadMallocTest.dir/build.make CMakeFiles/threadMallocTest.dir/cache.cpp.o
 	$(MAKE) -f CMakeFiles/mymalloc.dir/build.make CMakeFiles/mymalloc.dir/cache.cpp.o
 	$(MAKE) -f CMakeFiles/mallocTest.dir/build.make CMakeFiles/mallocTest.dir/cache.cpp.o
 	$(MAKE) -f CMakeFiles/freeTest.dir/build.make CMakeFiles/freeTest.dir/cache.cpp.o
@@ -218,6 +219,7 @@ cache.i: cache.cpp.i
 
 # target to preprocess a source file
 cache.cpp.i:
+	$(MAKE) -f CMakeFiles/threadMallocTest.dir/build.make CMakeFiles/threadMallocTest.dir/cache.cpp.i
 	$(MAKE) -f CMakeFiles/mymalloc.dir/build.make CMakeFiles/mymalloc.dir/cache.cpp.i
 	$(MAKE) -f CMakeFiles/mallocTest.dir/build.make CMakeFiles/mallocTest.dir/cache.cpp.i
 	$(MAKE) -f CMakeFiles/freeTest.dir/build.make CMakeFiles/freeTest.dir/cache.cpp.i
@@ -229,6 +231,7 @@ cache.s: cache.cpp.s
 
 # target to generate assembly for a file
 cache.cpp.s:
+	$(MAKE) -f CMakeFiles/threadMallocTest.dir/build.make CMakeFiles/threadMallocTest.dir/cache.cpp.s
 	$(MAKE) -f CMakeFiles/mymalloc.dir/build.make CMakeFiles/mymalloc.dir/cache.cpp.s
 	$(MAKE) -f CMakeFiles/mallocTest.dir/build.make CMakeFiles/mallocTest.dir/cache.cpp.s
 	$(MAKE) -f CMakeFiles/freeTest.dir/build.make CMakeFiles/freeTest.dir/cache.cpp.s
@@ -240,6 +243,7 @@ central.o: central.cpp.o
 
 # target to build an object file
 central.cpp.o:
+	$(MAKE) -f CMakeFiles/threadMallocTest.dir/build.make CMakeFiles/threadMallocTest.dir/central.cpp.o
 	$(MAKE) -f CMakeFiles/mymalloc.dir/build.make CMakeFiles/mymalloc.dir/central.cpp.o
 	$(MAKE) -f CMakeFiles/mallocTest.dir/build.make CMakeFiles/mallocTest.dir/central.cpp.o
 	$(MAKE) -f CMakeFiles/freeTest.dir/build.make CMakeFiles/freeTest.dir/central.cpp.o
@@ -251,6 +255,7 @@ central.i: central.cpp.i
 
 # target to preprocess a source file
 central.cpp.i:
+	$(MAKE) -f CMakeFiles/threadMallocTest.dir/build.make CMakeFiles/threadMallocTest.dir/central.cpp.i
 	$(MAKE) -f CMakeFiles/mymalloc.dir/build.make CMakeFiles/mymalloc.dir/central.cpp.i
 	$(MAKE) -f CMakeFiles/mallocTest.dir/build.make CMakeFiles/mallocTest.dir/central.cpp.i
 	$(MAKE) -f CMakeFiles/freeTest.dir/build.make CMakeFiles/freeTest.dir/central.cpp.i
@@ -262,6 +267,7 @@ central.s: central.cpp.s
 
 # target to generate assembly for a file
 central.cpp.s:
+	$(MAKE) -f CMakeFiles/threadMallocTest.dir/build.make CMakeFiles/threadMallocTest.dir/central.cpp.s
 	$(MAKE) -f CMakeFiles/mymalloc.dir/build.make CMakeFiles/mymalloc.dir/central.cpp.s
 	$(MAKE) -f CMakeFiles/mallocTest.dir/build.make CMakeFiles/mallocTest.dir/central.cpp.s
 	$(MAKE) -f CMakeFiles/freeTest.dir/build.make CMakeFiles/freeTest.dir/central.cpp.s
@@ -300,6 +306,7 @@ mymalloc.o: mymalloc.cpp.o
 
 # target to build an object file
 mymalloc.cpp.o:
+	$(MAKE) -f CMakeFiles/threadMallocTest.dir/build.make CMakeFiles/threadMallocTest.dir/mymalloc.cpp.o
 	$(MAKE) -f CMakeFiles/mymalloc.dir/build.make CMakeFiles/mymalloc.dir/mymalloc.cpp.o
 	$(MAKE) -f CMakeFiles/mallocTest.dir/build.make CMakeFiles/mallocTest.dir/mymalloc.cpp.o
 	$(MAKE) -f CMakeFiles/freeTest.dir/build.make CMakeFiles/freeTest.dir/mymalloc.cpp.o
@@ -311,6 +318,7 @@ mymalloc.i: mymalloc.cpp.i
 
 # target to preprocess a source file
 mymalloc.cpp.i:
+	$(MAKE) -f CMakeFiles/threadMallocTest.dir/build.make CMakeFiles/threadMallocTest.dir/mymalloc.cpp.i
 	$(MAKE) -f CMakeFiles/mymalloc.dir/build.make CMakeFiles/mymalloc.dir/mymalloc.cpp.i
 	$(MAKE) -f CMakeFiles/mallocTest.dir/build.make CMakeFiles/mallocTest.dir/mymalloc.cpp.i
 	$(MAKE) -f CMakeFiles/freeTest.dir/build.make CMakeFiles/freeTest.dir/mymalloc.cpp.i
@@ -322,6 +330,7 @@ mymalloc.s: mymalloc.cpp.s
 
 # target to generate assembly for a file
 mymalloc.cpp.s:
+	$(MAKE) -f CMakeFiles/threadMallocTest.dir/build.make CMakeFiles/threadMallocTest.dir/mymalloc.cpp.s
 	$(MAKE) -f CMakeFiles/mymalloc.dir/build.make CMakeFiles/mymalloc.dir/mymalloc.cpp.s
 	$(MAKE) -f CMakeFiles/mallocTest.dir/build.make CMakeFiles/mallocTest.dir/mymalloc.cpp.s
 	$(MAKE) -f CMakeFiles/freeTest.dir/build.make CMakeFiles/freeTest.dir/mymalloc.cpp.s
@@ -333,6 +342,7 @@ span.o: span.cpp.o
 
 # target to build an object file
 span.cpp.o:
+	$(MAKE) -f CMakeFiles/threadMallocTest.dir/build.make CMakeFiles/threadMallocTest.dir/span.cpp.o
 	$(MAKE) -f CMakeFiles/mymalloc.dir/build.make CMakeFiles/mymalloc.dir/span.cpp.o
 	$(MAKE) -f CMakeFiles/mallocTest.dir/build.make CMakeFiles/mallocTest.dir/span.cpp.o
 	$(MAKE) -f CMakeFiles/freeTest.dir/build.make CMakeFiles/freeTest.dir/span.cpp.o
@@ -344,6 +354,7 @@ span.i: span.cpp.i
 
 # target to preprocess a source file
 span.cpp.i:
+	$(MAKE) -f CMakeFiles/threadMallocTest.dir/build.make CMakeFiles/threadMallocTest.dir/span.cpp.i
 	$(MAKE) -f CMakeFiles/mymalloc.dir/build.make CMakeFiles/mymalloc.dir/span.cpp.i
 	$(MAKE) -f CMakeFiles/mallocTest.dir/build.make CMakeFiles/mallocTest.dir/span.cpp.i
 	$(MAKE) -f CMakeFiles/freeTest.dir/build.make CMakeFiles/freeTest.dir/span.cpp.i
@@ -355,6 +366,7 @@ span.s: span.cpp.s
 
 # target to generate assembly for a file
 span.cpp.s:
+	$(MAKE) -f CMakeFiles/threadMallocTest.dir/build.make CMakeFiles/threadMallocTest.dir/span.cpp.s
 	$(MAKE) -f CMakeFiles/mymalloc.dir/build.make CMakeFiles/mymalloc.dir/span.cpp.s
 	$(MAKE) -f CMakeFiles/mallocTest.dir/build.make CMakeFiles/mallocTest.dir/span.cpp.s
 	$(MAKE) -f CMakeFiles/freeTest.dir/build.make CMakeFiles/freeTest.dir/span.cpp.s

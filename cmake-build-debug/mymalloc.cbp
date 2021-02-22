@@ -361,31 +361,37 @@
 			</Target>
 		</Build>
 		<Unit filename="/tmp/tmp.p67NHqaNhG/bitmap.h">
+			<Option target="threadMallocTest"/>
 			<Option target="mymalloc"/>
 			<Option target="mallocTest"/>
 			<Option target="freeTest"/>
 		</Unit>
 		<Unit filename="/tmp/tmp.p67NHqaNhG/cache.cpp">
+			<Option target="threadMallocTest"/>
 			<Option target="mymalloc"/>
 			<Option target="mallocTest"/>
 			<Option target="freeTest"/>
 		</Unit>
 		<Unit filename="/tmp/tmp.p67NHqaNhG/cache.h">
+			<Option target="threadMallocTest"/>
 			<Option target="mymalloc"/>
 			<Option target="mallocTest"/>
 			<Option target="freeTest"/>
 		</Unit>
 		<Unit filename="/tmp/tmp.p67NHqaNhG/central.cpp">
+			<Option target="threadMallocTest"/>
 			<Option target="mymalloc"/>
 			<Option target="mallocTest"/>
 			<Option target="freeTest"/>
 		</Unit>
 		<Unit filename="/tmp/tmp.p67NHqaNhG/central.h">
+			<Option target="threadMallocTest"/>
 			<Option target="mymalloc"/>
 			<Option target="mallocTest"/>
 			<Option target="freeTest"/>
 		</Unit>
 		<Unit filename="/tmp/tmp.p67NHqaNhG/consts.h">
+			<Option target="threadMallocTest"/>
 			<Option target="mymalloc"/>
 			<Option target="mallocTest"/>
 			<Option target="freeTest"/>
@@ -394,21 +400,25 @@
 			<Option target="mymalloc"/>
 		</Unit>
 		<Unit filename="/tmp/tmp.p67NHqaNhG/mymalloc.cpp">
+			<Option target="threadMallocTest"/>
 			<Option target="mymalloc"/>
 			<Option target="mallocTest"/>
 			<Option target="freeTest"/>
 		</Unit>
 		<Unit filename="/tmp/tmp.p67NHqaNhG/mymalloc.h">
+			<Option target="threadMallocTest"/>
 			<Option target="mymalloc"/>
 			<Option target="mallocTest"/>
 			<Option target="freeTest"/>
 		</Unit>
 		<Unit filename="/tmp/tmp.p67NHqaNhG/span.cpp">
+			<Option target="threadMallocTest"/>
 			<Option target="mymalloc"/>
 			<Option target="mallocTest"/>
 			<Option target="freeTest"/>
 		</Unit>
 		<Unit filename="/tmp/tmp.p67NHqaNhG/span.h">
+			<Option target="threadMallocTest"/>
 			<Option target="mymalloc"/>
 			<Option target="mallocTest"/>
 			<Option target="freeTest"/>

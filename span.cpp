@@ -21,6 +21,9 @@ void *Span::malloc() {
     }
 }
 
+Span::Span() {
+    // 空空如也
+}
 
 
 // SpanList 构造
@@ -33,27 +36,24 @@ SpanList::SpanList(int sc) {
     list = nullptr;
 }
 
-Span *SpanList::getSpan(SpanMap* spanMap) {
-    if (list == nullptr) {
-        // 没有 span了, 则调用mmap分配一个
-        auto addr = mmap(
-                NULL,                   //分配的首地址
-                spanInfo[spanClass][2],                     //分配内存大小(必须是页的整数倍, 32位1页=4k)
-                PROT_READ | PROT_WRITE, //映射区域保护权限：读|写
-                MAP_ANON | MAP_SHARED,  //匿名映射(不涉及文件io), 后面两个参数忽略
-                0,                      //要映射到内存中的文件描述符
-                0                       //文件映射的偏移量，通常设置为0，必须是页的整数倍
-        );
-        // ! 产生 span的地方, 需要添加到 spanMap结构中
-        Span *span = new Span(addr, spanInfo[spanClass][2],
-                              spanInfo[spanClass][3], 0, spanClass,
-                              spanInfo[spanClass][1]);
-        (*spanMap)[(bool*)addr] = span;
-        list = span;
-        span->prev = span;
-        span->next = span;
-    }
-    return list;
+Span *SpanList::newSpan(SpanMap* spanMap) {
+    // 没有 span了, 则调用mmap分配一个
+    auto addr = mmap(
+            NULL,                    //分配的首地址
+            spanInfo[spanClass][2],   //分配内存大小(必须是页的整数倍, 32位1页=4k)
+            PROT_READ | PROT_WRITE,  //映射区域保护权限：读|写
+            MAP_ANON | MAP_SHARED,  //匿名映射(不涉及文件io), 后面两个参数忽略
+            0,                        //要映射到内存中的文件描述符
+            0                      //文件映射的偏移量，通常设置为0，必须是页的整数倍
+    );
+    // ! 产生 span的地方, 需要添加到 spanMap结构中
+    Span *span = new Span(addr, spanInfo[spanClass][2],
+                          spanInfo[spanClass][3], 0, spanClass,
+                          spanInfo[spanClass][1]);
+    (*spanMap)[(bool*)addr] = span;
+    span->prev = span;
+    span->next = span;
+    return span;
 }
 
 // 弹出列表首部

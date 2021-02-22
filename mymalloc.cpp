@@ -19,16 +19,17 @@ void *mymalloc::Heap::malloc(int size) {
     if (size > maxSmallObjectSize) {  // 大对象分配
         return bigObjectMalloc(size);
     }
-    // 根据size, 选择一个合适的class
-    int spanClass = 1;
-    for (int i = 0; i < spanClasses; i++) {
-        if (size <= spanInfo[i][1]) {
-            spanClass = spanInfo[i][0];
-            break;
-        }
+
+    Cache* cache;
+    auto id = std::this_thread::get_id();
+    // 选择对应的 Cache结构来进行内存分配
+    if (this->cacheMap.find(id) == this->cacheMap.end()) {
+        // 如果没有当前线程id的缓存结构, 那么创建一个
+        cache = new Cache(this->ctls, &this->spanMap);
+        this->cacheMap[id] = cache;  // 把 central 数组的地址传进去
     }
-    // 使用对应class的central来进行内存分配
-    return this->ctls[spanClass].malloc(&spanMap);
+    cache = this->cacheMap[id];
+    return cache->malloc(size);
 }
 
 // 大对象的内存分配
@@ -87,11 +88,12 @@ void mymalloc::Heap::free(void *addr) {
 
     // 如果这个span在 empty 列表中, 那么释放了一个对象之后, 应该把他移到 nonempty列表中.
     // 之后将这个span从empty列表中弹出
-    if (span->allocCount == span->nelems - 1) {  // allocCount 从 nelems 到 nelems - 1, 那么需要移动它所属的链表
-        // 这里有个bug, 应该先 pop, 在 push
-        this->ctls[spanClass].empty.pop(span);
-        this->ctls[spanClass].nonempty.pushBack(span);
-    }
+    // ! 多线程缓存版不管这个了
+//    if (span->allocCount == span->nelems - 1) {  // allocCount 从 nelems 到 nelems - 1, 那么需要移动它所属的链表
+//        // 这里有个bug, 应该先 pop, 在 push
+//        this->ctls[spanClass].empty.pop(span);
+//        this->ctls[spanClass].nonempty.pushBack(span);
+//    }
     // 小对象 free 之后, 将计数减一
     this->ctls[spanClass].nmalloc--;
 }
