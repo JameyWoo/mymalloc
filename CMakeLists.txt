@@ -4,7 +4,7 @@ project(mymalloc)
 set(CMAKE_CXX_STANDARD 14)
 
 set(
-        mymallocSource
+        mymalloc_src
         mymalloc.h
         mymalloc.cpp
         bitmap.h
@@ -17,19 +17,19 @@ set(
 add_executable(
         mymalloc
         main.cpp
-        ${mymallocSource}
+        ${mymalloc_src}
 )
 
 add_executable(
         mallocTest
         test/mallocTest.cpp
-        ${mymallocSource}
+        ${mymalloc_src}
 )
 
 add_executable(
         freeTest
         test/freeTest.cpp
-        ${mymallocSource}
+        ${mymalloc_src}
 )
 
 add_executable(
@@ -50,7 +50,7 @@ target_link_libraries(
 add_executable(
         threadMallocTest
         test/threadMallocTest.cpp
-        ${mymallocSource}
+        ${mymalloc_src}
 )
 
 target_link_libraries(
@@ -72,4 +72,10 @@ add_executable(
         redefineTest
         test/redefine/redefineTest.cpp
         test/redefine/redefine.h
+)
+
+add_executable(
+        staticTest
+        test/staticTest.cpp
+        ${mymalloc_src}
 )

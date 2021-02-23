@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/staticTest.dir/test/staticTest.cpp.o CMakeFiles/staticTest.dir/mymalloc.cpp.o CMakeFiles/staticTest.dir/span.cpp.o CMakeFiles/staticTest.dir/central.cpp.o CMakeFiles/staticTest.dir/cache.cpp.o  -o staticTest 

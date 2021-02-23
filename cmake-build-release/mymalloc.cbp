@@ -17,28 +17,8 @@
 					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/tmp/tmp.p67NHqaNhG/cmake-build-release"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/tmp/tmp.p67NHqaNhG/cmake-build-release"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="redefineTest">
-				<Option output="/tmp/tmp.p67NHqaNhG/cmake-build-release/redefineTest" prefix_auto="0" extension_auto="0"/>
+			<Target title="cpuTest">
+				<Option output="/tmp/tmp.p67NHqaNhG/cmake-build-release/cpuTest" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/tmp/tmp.p67NHqaNhG/cmake-build-release"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -54,14 +34,14 @@
 					<Add directory="/opt/rh/devtoolset-8/root/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 redefineTest"/>
+					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 cpuTest"/>
 					<CompileFile command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="redefineTest/fast">
-				<Option output="/tmp/tmp.p67NHqaNhG/cmake-build-release/redefineTest" prefix_auto="0" extension_auto="0"/>
+			<Target title="cpuTest/fast">
+				<Option output="/tmp/tmp.p67NHqaNhG/cmake-build-release/cpuTest" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/tmp/tmp.p67NHqaNhG/cmake-build-release"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -77,191 +57,7 @@
 					<Add directory="/opt/rh/devtoolset-8/root/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 redefineTest/fast"/>
-					<CompileFile command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="threadMallocTest">
-				<Option output="/tmp/tmp.p67NHqaNhG/cmake-build-release/threadMallocTest" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/tmp/tmp.p67NHqaNhG/cmake-build-release"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
-					<Add directory="/opt/rh/devtoolset-8/root/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 threadMallocTest"/>
-					<CompileFile command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="threadMallocTest/fast">
-				<Option output="/tmp/tmp.p67NHqaNhG/cmake-build-release/threadMallocTest" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/tmp/tmp.p67NHqaNhG/cmake-build-release"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
-					<Add directory="/opt/rh/devtoolset-8/root/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 threadMallocTest/fast"/>
-					<CompileFile command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="threadTest">
-				<Option output="/tmp/tmp.p67NHqaNhG/cmake-build-release/threadTest" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/tmp/tmp.p67NHqaNhG/cmake-build-release"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
-					<Add directory="/opt/rh/devtoolset-8/root/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 threadTest"/>
-					<CompileFile command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="threadTest/fast">
-				<Option output="/tmp/tmp.p67NHqaNhG/cmake-build-release/threadTest" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/tmp/tmp.p67NHqaNhG/cmake-build-release"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
-					<Add directory="/opt/rh/devtoolset-8/root/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 threadTest/fast"/>
-					<CompileFile command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="mymalloc">
-				<Option output="/tmp/tmp.p67NHqaNhG/cmake-build-release/mymalloc" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/tmp/tmp.p67NHqaNhG/cmake-build-release"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
-					<Add directory="/opt/rh/devtoolset-8/root/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 mymalloc"/>
-					<CompileFile command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="mymalloc/fast">
-				<Option output="/tmp/tmp.p67NHqaNhG/cmake-build-release/mymalloc" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/tmp/tmp.p67NHqaNhG/cmake-build-release"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
-					<Add directory="/opt/rh/devtoolset-8/root/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 mymalloc/fast"/>
-					<CompileFile command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="mallocTest">
-				<Option output="/tmp/tmp.p67NHqaNhG/cmake-build-release/mallocTest" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/tmp/tmp.p67NHqaNhG/cmake-build-release"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
-					<Add directory="/opt/rh/devtoolset-8/root/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 mallocTest"/>
-					<CompileFile command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="mallocTest/fast">
-				<Option output="/tmp/tmp.p67NHqaNhG/cmake-build-release/mallocTest" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/tmp/tmp.p67NHqaNhG/cmake-build-release"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
-					<Add directory="/opt/rh/devtoolset-8/root/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 mallocTest/fast"/>
+					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 cpuTest/fast"/>
 					<CompileFile command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
@@ -313,8 +109,8 @@
 					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="cpuTest">
-				<Option output="/tmp/tmp.p67NHqaNhG/cmake-build-release/cpuTest" prefix_auto="0" extension_auto="0"/>
+			<Target title="staticTest">
+				<Option output="/tmp/tmp.p67NHqaNhG/cmake-build-release/staticTest" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/tmp/tmp.p67NHqaNhG/cmake-build-release"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -330,14 +126,14 @@
 					<Add directory="/opt/rh/devtoolset-8/root/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 cpuTest"/>
+					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 staticTest"/>
 					<CompileFile command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="cpuTest/fast">
-				<Option output="/tmp/tmp.p67NHqaNhG/cmake-build-release/cpuTest" prefix_auto="0" extension_auto="0"/>
+			<Target title="staticTest/fast">
+				<Option output="/tmp/tmp.p67NHqaNhG/cmake-build-release/staticTest" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/tmp/tmp.p67NHqaNhG/cmake-build-release"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -353,7 +149,247 @@
 					<Add directory="/opt/rh/devtoolset-8/root/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 cpuTest/fast"/>
+					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 staticTest/fast"/>
+					<CompileFile command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mallocTest">
+				<Option output="/tmp/tmp.p67NHqaNhG/cmake-build-release/mallocTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.p67NHqaNhG/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/opt/rh/devtoolset-8/root/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 mallocTest"/>
+					<CompileFile command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mallocTest/fast">
+				<Option output="/tmp/tmp.p67NHqaNhG/cmake-build-release/mallocTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.p67NHqaNhG/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/opt/rh/devtoolset-8/root/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 mallocTest/fast"/>
+					<CompileFile command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mymalloc">
+				<Option output="/tmp/tmp.p67NHqaNhG/cmake-build-release/mymalloc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.p67NHqaNhG/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/opt/rh/devtoolset-8/root/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 mymalloc"/>
+					<CompileFile command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mymalloc/fast">
+				<Option output="/tmp/tmp.p67NHqaNhG/cmake-build-release/mymalloc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.p67NHqaNhG/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/opt/rh/devtoolset-8/root/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 mymalloc/fast"/>
+					<CompileFile command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="threadTest">
+				<Option output="/tmp/tmp.p67NHqaNhG/cmake-build-release/threadTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.p67NHqaNhG/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/opt/rh/devtoolset-8/root/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 threadTest"/>
+					<CompileFile command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="threadTest/fast">
+				<Option output="/tmp/tmp.p67NHqaNhG/cmake-build-release/threadTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.p67NHqaNhG/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/opt/rh/devtoolset-8/root/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 threadTest/fast"/>
+					<CompileFile command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/tmp/tmp.p67NHqaNhG/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="threadMallocTest">
+				<Option output="/tmp/tmp.p67NHqaNhG/cmake-build-release/threadMallocTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.p67NHqaNhG/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/opt/rh/devtoolset-8/root/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 threadMallocTest"/>
+					<CompileFile command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="threadMallocTest/fast">
+				<Option output="/tmp/tmp.p67NHqaNhG/cmake-build-release/threadMallocTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.p67NHqaNhG/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/opt/rh/devtoolset-8/root/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 threadMallocTest/fast"/>
+					<CompileFile command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="redefineTest">
+				<Option output="/tmp/tmp.p67NHqaNhG/cmake-build-release/redefineTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.p67NHqaNhG/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/opt/rh/devtoolset-8/root/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 redefineTest"/>
+					<CompileFile command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="redefineTest/fast">
+				<Option output="/tmp/tmp.p67NHqaNhG/cmake-build-release/redefineTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.p67NHqaNhG/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/opt/rh/devtoolset-8/root/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 redefineTest/fast"/>
 					<CompileFile command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
@@ -405,69 +441,89 @@
 					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/tmp/tmp.p67NHqaNhG/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
 		<Unit filename="/tmp/tmp.p67NHqaNhG/bitmap.h">
-			<Option target="threadMallocTest"/>
-			<Option target="mymalloc"/>
-			<Option target="mallocTest"/>
 			<Option target="freeTest"/>
+			<Option target="staticTest"/>
+			<Option target="mallocTest"/>
+			<Option target="mymalloc"/>
+			<Option target="threadMallocTest"/>
 		</Unit>
 		<Unit filename="/tmp/tmp.p67NHqaNhG/cache.cpp">
-			<Option target="threadMallocTest"/>
-			<Option target="mymalloc"/>
-			<Option target="mallocTest"/>
 			<Option target="freeTest"/>
+			<Option target="staticTest"/>
+			<Option target="mallocTest"/>
+			<Option target="mymalloc"/>
+			<Option target="threadMallocTest"/>
 		</Unit>
 		<Unit filename="/tmp/tmp.p67NHqaNhG/cache.h">
-			<Option target="threadMallocTest"/>
-			<Option target="mymalloc"/>
-			<Option target="mallocTest"/>
 			<Option target="freeTest"/>
+			<Option target="staticTest"/>
+			<Option target="mallocTest"/>
+			<Option target="mymalloc"/>
+			<Option target="threadMallocTest"/>
 		</Unit>
 		<Unit filename="/tmp/tmp.p67NHqaNhG/central.cpp">
-			<Option target="threadMallocTest"/>
-			<Option target="mymalloc"/>
-			<Option target="mallocTest"/>
 			<Option target="freeTest"/>
+			<Option target="staticTest"/>
+			<Option target="mallocTest"/>
+			<Option target="mymalloc"/>
+			<Option target="threadMallocTest"/>
 		</Unit>
 		<Unit filename="/tmp/tmp.p67NHqaNhG/central.h">
-			<Option target="threadMallocTest"/>
-			<Option target="mymalloc"/>
-			<Option target="mallocTest"/>
 			<Option target="freeTest"/>
+			<Option target="staticTest"/>
+			<Option target="mallocTest"/>
+			<Option target="mymalloc"/>
+			<Option target="threadMallocTest"/>
 		</Unit>
 		<Unit filename="/tmp/tmp.p67NHqaNhG/consts.h">
-			<Option target="threadMallocTest"/>
-			<Option target="mymalloc"/>
-			<Option target="mallocTest"/>
 			<Option target="freeTest"/>
+			<Option target="staticTest"/>
+			<Option target="mallocTest"/>
+			<Option target="mymalloc"/>
+			<Option target="threadMallocTest"/>
 		</Unit>
 		<Unit filename="/tmp/tmp.p67NHqaNhG/main.cpp">
 			<Option target="mymalloc"/>
 		</Unit>
 		<Unit filename="/tmp/tmp.p67NHqaNhG/mymalloc.cpp">
-			<Option target="threadMallocTest"/>
-			<Option target="mymalloc"/>
-			<Option target="mallocTest"/>
 			<Option target="freeTest"/>
+			<Option target="staticTest"/>
+			<Option target="mallocTest"/>
+			<Option target="mymalloc"/>
+			<Option target="threadMallocTest"/>
 		</Unit>
 		<Unit filename="/tmp/tmp.p67NHqaNhG/mymalloc.h">
-			<Option target="threadMallocTest"/>
-			<Option target="mymalloc"/>
-			<Option target="mallocTest"/>
 			<Option target="freeTest"/>
+			<Option target="staticTest"/>
+			<Option target="mallocTest"/>
+			<Option target="mymalloc"/>
+			<Option target="threadMallocTest"/>
 		</Unit>
 		<Unit filename="/tmp/tmp.p67NHqaNhG/span.cpp">
-			<Option target="threadMallocTest"/>
-			<Option target="mymalloc"/>
-			<Option target="mallocTest"/>
 			<Option target="freeTest"/>
+			<Option target="staticTest"/>
+			<Option target="mallocTest"/>
+			<Option target="mymalloc"/>
+			<Option target="threadMallocTest"/>
 		</Unit>
 		<Unit filename="/tmp/tmp.p67NHqaNhG/span.h">
-			<Option target="threadMallocTest"/>
-			<Option target="mymalloc"/>
-			<Option target="mallocTest"/>
 			<Option target="freeTest"/>
+			<Option target="staticTest"/>
+			<Option target="mallocTest"/>
+			<Option target="mymalloc"/>
+			<Option target="threadMallocTest"/>
 		</Unit>
 		<Unit filename="/tmp/tmp.p67NHqaNhG/test/cpuTest.cpp">
 			<Option target="cpuTest"/>
@@ -486,6 +542,12 @@
 		</Unit>
 		<Unit filename="/tmp/tmp.p67NHqaNhG/test/redefine/redefineTest.cpp">
 			<Option target="redefineTest"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.p67NHqaNhG/test/staticTest.cpp">
+			<Option target="staticTest"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.p67NHqaNhG/test/staticTest.h">
+			<Option target="staticTest"/>
 		</Unit>
 		<Unit filename="/tmp/tmp.p67NHqaNhG/test/threadMallocTest.cpp">
 			<Option target="threadMallocTest"/>
