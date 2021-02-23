@@ -1,1 +1,0 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/freeTest.dir/test/freeTest.cpp.o CMakeFiles/freeTest.dir/mymalloc.cpp.o CMakeFiles/freeTest.dir/span.cpp.o CMakeFiles/freeTest.dir/central.cpp.o CMakeFiles/freeTest.dir/cache.cpp.o  -o freeTest 
