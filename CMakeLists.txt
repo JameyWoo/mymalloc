@@ -67,3 +67,9 @@ target_link_libraries(
         cpuTest
         pthread
 )
+
+add_executable(
+        redefineTest
+        test/redefine/redefineTest.cpp
+        test/redefine/redefine.h
+)

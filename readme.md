@@ -32,3 +32,17 @@
 
 
 cache与线程的生命周期. 
+
+
+tcmalloc 如何用自己的函数替代官方的 malloc, free, new, delete 的?
+
+这跟 符号链接有关, 弱符号, 强符号. 在tcmalloc中, 这部分的定义在 libc_override_gcc_and_weak.h 文件中. 
+
+https://wallenwang.com/2018/11/tcmalloc/ : 使用 gcc编译器一节
+
+tcmalloc负责内存分配的对象在main函数执行之前就生成了, 并托管了系统的内存分配的
+
+一个 static 的变量应该是在main执行之前就会执行的了. 所以即使是类, 也可以通过一个这样的变量来调用自己的分配方法从而执行内存分配
+
+如何使用 cmkae生成我的内存分配器的动态库/静态库呢? 
+

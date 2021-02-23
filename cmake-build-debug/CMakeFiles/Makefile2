@@ -65,13 +65,50 @@ CMAKE_SOURCE_DIR = /tmp/tmp.p67NHqaNhG
 CMAKE_BINARY_DIR = /tmp/tmp.p67NHqaNhG/cmake-build-debug
 
 #=============================================================================
+# Target rules for target CMakeFiles/redefineTest.dir
+
+# All Build rule for target.
+CMakeFiles/redefineTest.dir/all:
+	$(MAKE) -f CMakeFiles/redefineTest.dir/build.make CMakeFiles/redefineTest.dir/depend
+	$(MAKE) -f CMakeFiles/redefineTest.dir/build.make CMakeFiles/redefineTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/tmp/tmp.p67NHqaNhG/cmake-build-debug/CMakeFiles --progress-num=23,24 "Built target redefineTest"
+.PHONY : CMakeFiles/redefineTest.dir/all
+
+# Include target in all.
+all: CMakeFiles/redefineTest.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/redefineTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/tmp.p67NHqaNhG/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/redefineTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/tmp.p67NHqaNhG/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/redefineTest.dir/rule
+
+# Convenience name for target.
+redefineTest: CMakeFiles/redefineTest.dir/rule
+
+.PHONY : redefineTest
+
+# clean rule for target.
+CMakeFiles/redefineTest.dir/clean:
+	$(MAKE) -f CMakeFiles/redefineTest.dir/build.make CMakeFiles/redefineTest.dir/clean
+.PHONY : CMakeFiles/redefineTest.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/redefineTest.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/threadMallocTest.dir
 
 # All Build rule for target.
 CMakeFiles/threadMallocTest.dir/all:
 	$(MAKE) -f CMakeFiles/threadMallocTest.dir/build.make CMakeFiles/threadMallocTest.dir/depend
 	$(MAKE) -f CMakeFiles/threadMallocTest.dir/build.make CMakeFiles/threadMallocTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/tmp/tmp.p67NHqaNhG/cmake-build-debug/CMakeFiles --progress-num=23,24,25,26,27,28 "Built target threadMallocTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/tmp/tmp.p67NHqaNhG/cmake-build-debug/CMakeFiles --progress-num=25,26,27,28,29,30 "Built target threadMallocTest"
 .PHONY : CMakeFiles/threadMallocTest.dir/all
 
 # Include target in all.
@@ -108,7 +145,7 @@ clean: CMakeFiles/threadMallocTest.dir/clean
 CMakeFiles/threadTest.dir/all:
 	$(MAKE) -f CMakeFiles/threadTest.dir/build.make CMakeFiles/threadTest.dir/depend
 	$(MAKE) -f CMakeFiles/threadTest.dir/build.make CMakeFiles/threadTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/tmp/tmp.p67NHqaNhG/cmake-build-debug/CMakeFiles --progress-num=29,30 "Built target threadTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/tmp/tmp.p67NHqaNhG/cmake-build-debug/CMakeFiles --progress-num=31,32 "Built target threadTest"
 .PHONY : CMakeFiles/threadTest.dir/all
 
 # Include target in all.

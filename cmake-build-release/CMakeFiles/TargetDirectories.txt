@@ -1,5 +1,6 @@
 /tmp/tmp.p67NHqaNhG/cmake-build-release/CMakeFiles/rebuild_cache.dir
 /tmp/tmp.p67NHqaNhG/cmake-build-release/CMakeFiles/edit_cache.dir
+/tmp/tmp.p67NHqaNhG/cmake-build-release/CMakeFiles/redefineTest.dir
 /tmp/tmp.p67NHqaNhG/cmake-build-release/CMakeFiles/threadMallocTest.dir
 /tmp/tmp.p67NHqaNhG/cmake-build-release/CMakeFiles/threadTest.dir
 /tmp/tmp.p67NHqaNhG/cmake-build-release/CMakeFiles/mymalloc.dir

@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named redefineTest
+
+# Build rule for target.
+redefineTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 redefineTest
+.PHONY : redefineTest
+
+# fast build rule for target.
+redefineTest/fast:
+	$(MAKE) -f CMakeFiles/redefineTest.dir/build.make CMakeFiles/redefineTest.dir/build
+.PHONY : redefineTest/fast
+
+#=============================================================================
 # Target rules for targets named threadMallocTest
 
 # Build rule for target.
@@ -480,6 +493,33 @@ test/mapTest.cpp.s:
 	$(MAKE) -f CMakeFiles/mapTest.dir/build.make CMakeFiles/mapTest.dir/test/mapTest.cpp.s
 .PHONY : test/mapTest.cpp.s
 
+test/redefine/redefineTest.o: test/redefine/redefineTest.cpp.o
+
+.PHONY : test/redefine/redefineTest.o
+
+# target to build an object file
+test/redefine/redefineTest.cpp.o:
+	$(MAKE) -f CMakeFiles/redefineTest.dir/build.make CMakeFiles/redefineTest.dir/test/redefine/redefineTest.cpp.o
+.PHONY : test/redefine/redefineTest.cpp.o
+
+test/redefine/redefineTest.i: test/redefine/redefineTest.cpp.i
+
+.PHONY : test/redefine/redefineTest.i
+
+# target to preprocess a source file
+test/redefine/redefineTest.cpp.i:
+	$(MAKE) -f CMakeFiles/redefineTest.dir/build.make CMakeFiles/redefineTest.dir/test/redefine/redefineTest.cpp.i
+.PHONY : test/redefine/redefineTest.cpp.i
+
+test/redefine/redefineTest.s: test/redefine/redefineTest.cpp.s
+
+.PHONY : test/redefine/redefineTest.s
+
+# target to generate assembly for a file
+test/redefine/redefineTest.cpp.s:
+	$(MAKE) -f CMakeFiles/redefineTest.dir/build.make CMakeFiles/redefineTest.dir/test/redefine/redefineTest.cpp.s
+.PHONY : test/redefine/redefineTest.cpp.s
+
 test/threadMallocTest.o: test/threadMallocTest.cpp.o
 
 .PHONY : test/threadMallocTest.o
@@ -542,6 +582,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... redefineTest"
 	@echo "... threadMallocTest"
 	@echo "... threadTest"
 	@echo "... mymalloc"
@@ -576,6 +617,9 @@ help:
 	@echo "... test/mapTest.o"
 	@echo "... test/mapTest.i"
 	@echo "... test/mapTest.s"
+	@echo "... test/redefine/redefineTest.o"
+	@echo "... test/redefine/redefineTest.i"
+	@echo "... test/redefine/redefineTest.s"
 	@echo "... test/threadMallocTest.o"
 	@echo "... test/threadMallocTest.i"
 	@echo "... test/threadMallocTest.s"

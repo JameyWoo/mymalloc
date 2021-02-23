@@ -37,6 +37,52 @@
 					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="redefineTest">
+				<Option output="/tmp/tmp.p67NHqaNhG/cmake-build-debug/redefineTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.p67NHqaNhG/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/opt/rh/devtoolset-8/root/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-debug/Makefile&quot;  VERBOSE=1 redefineTest"/>
+					<CompileFile command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="redefineTest/fast">
+				<Option output="/tmp/tmp.p67NHqaNhG/cmake-build-debug/redefineTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.p67NHqaNhG/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/opt/rh/devtoolset-8/root/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-debug/Makefile&quot;  VERBOSE=1 redefineTest/fast"/>
+					<CompileFile command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -f &quot;/tmp/tmp.p67NHqaNhG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="threadMallocTest">
 				<Option output="/tmp/tmp.p67NHqaNhG/cmake-build-debug/threadMallocTest" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/tmp/tmp.p67NHqaNhG/cmake-build-debug"/>
@@ -434,6 +480,12 @@
 		</Unit>
 		<Unit filename="/tmp/tmp.p67NHqaNhG/test/mapTest.cpp">
 			<Option target="mapTest"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.p67NHqaNhG/test/redefine/redefine.h">
+			<Option target="redefineTest"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.p67NHqaNhG/test/redefine/redefineTest.cpp">
+			<Option target="redefineTest"/>
 		</Unit>
 		<Unit filename="/tmp/tmp.p67NHqaNhG/test/threadMallocTest.cpp">
 			<Option target="threadMallocTest"/>
