@@ -1,7 +1,7 @@
 #include <iostream>
 #include <unistd.h>
 
-#include "../mymalloc.h"
+#include "../heap.h"
 
 using namespace std;
 

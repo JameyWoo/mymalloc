@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../mymalloc.h"
+#include "../heap.h"
 
 using namespace std;
 
@@ -12,4 +12,6 @@ int main() {
         cout << "size = " << i + 1 << ": " << mc.malloc(8) << endl;
     }
     cout << "end" << endl;
+
+
 }

@@ -5,13 +5,14 @@ set(CMAKE_CXX_STANDARD 14)
 
 set(
         mymalloc_src
-        mymalloc.h
-        mymalloc.cpp
+        heap.h
+        heap.cpp
         bitmap.h
         consts.h
         span.cpp
         central.cpp
         cache.cpp
+        amalloc.h
 )
 
 add_executable(
@@ -77,5 +78,11 @@ add_executable(
 add_executable(
         staticTest
         test/staticTest.cpp
+        ${mymalloc_src}
+)
+
+add_executable(
+        overrideTest
+        test/new_delete/override.cpp
         ${mymalloc_src}
 )

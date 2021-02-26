@@ -5,7 +5,7 @@
 #ifndef MYMALLOC_STATICTEST_H
 #define MYMALLOC_STATICTEST_H
 
-#include "../mymalloc.h"
+#include "../heap.h"
 
 mymalloc::Heap heap;
 
